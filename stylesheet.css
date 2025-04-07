@@ -1,0 +1,140 @@
+
+selector 
+body 
+{
+ background: red;
+ color: white;
+ font-family: Nelvetica, Nelvetica Neue, Arial, sans-serif;
+ margin:0;
+ padding:0;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    top: 8px;
+    
+}
+header
+{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    background-image: url("/Images/Hero.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .logo a
+{
+    background-image: url("../Images/pacific-dark.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    width: 300px;
+    text-indent: -99999999px;
+    top: -20px;
+    position: relative;
+}
+header .Mobile
+{
+    display: none;
+}
+.nav-links
+{
+    color: white;
+}
+nav ul
+{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+section
+{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+/*RESPONSIVE RULES*/
+@media screen and (max-width: 700px)
+{
+   header .Mobile
+   {
+    
+       display: inline-block;
+       position: relative;
+   }
+   header .Desktop
+   {
+       display: none;
+   }
+   header .logo a
+   {
+    position: relative;
+    top: 16px;
+   }
+   header .nav-links
+   {
+       position: relative;
+       top: -20px;
+   }
+   header
+   {
+         height: 250px;
+   }
+}
+
+.features
+{
+    background: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.features figure
+{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+.features figure img
+{
+    border: 1px solid white;
+    box-shadow: gray 0px 0px 10px;
+    border-radius: 50%;
+    width: 200px;
+}
+
+div
+{
+    margin:auto;
+    background:rgb(9, 154, 227);
+    width: 100px;
+    
+}
+footer
+{
+    background: black;
+    color: gray;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
